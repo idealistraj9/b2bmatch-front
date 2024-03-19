@@ -35,12 +35,12 @@ const SignupForm = ({ switchToLoginTab }: { switchToLoginTab: any }) => {
 
   const validateSignupDetails = () => {
     if (!name || !email || !password || !confirmPassword) {
-      toast.error("Please fill in all required fields");
+      toast.error("Bitte füllen Sie alle erforderlichen Felder aus.");
       return false;
     }
 
     if (password !== confirmPassword) {
-      toast.error("Passwords do not match");
+      toast.error("Passwörter stimmen nicht überein.");
       return false;
     }
 
@@ -63,7 +63,7 @@ const SignupForm = ({ switchToLoginTab }: { switchToLoginTab: any }) => {
         accept_terms: true,
       });
 
-      console.log("Signup response:", response.status);
+      console.log("Antwort auf die Registrierung:", response.status);
 
       if (response.status === 201) {
         toast.success("Bestätigen Sie Ihre E-Mail !!!");
@@ -72,7 +72,7 @@ const SignupForm = ({ switchToLoginTab }: { switchToLoginTab: any }) => {
         toast.error("Etwas ist schief gelaufen. Bitte versuchen Sie es später noch einmal.");
       }
     } catch (error) {
-      console.error("Signup failed:", error);
+      console.error("Registrierung fehlgeschlagen:", error);
 
       if (error.response && error.response.status === 409) {
         toast.error("E-Mail existiert bereits");

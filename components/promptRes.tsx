@@ -5,16 +5,10 @@ const PromptRes = () => {
       <div className="flex flex-col w-full rounded-lg pt-2 pb-2">
         <div className=" w-full bg-response border-bor border-2 rounded-lg p-3 text-lg max-h-34 overflow-auto ">
           <p className="  text-lg">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi,
-            cupiditate vitae, id possimus tenetur corrupti itaque ratione
-            voluptas eius Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Eligendi, cupiditate vitae, id possimus tenetur corrupti
-            itaque ratione voluptas eius Lorem ipsum dolor sit amet consectetur.
-            adipisicing elit. Eligendi, cupiditate vitae, id possimus tenetur
-            corrupti itaque ratione voluptas eius Lorem ipsum dolor sit amet
-            consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Eligendi, cupiditate vitae, id possimus tenetur corrupti
-            itaque ratione voluptas eius Lorem ipsum dolor sit amet consectetur,
+            Hier wird Ihr Suchergebnis verbal angezeigt. Die Graphik zeigt Ihnen das gleiche mit mehr Details.
+          </p>
+          <p className="  text-lg">
+            {/* Text field left intentionally empty */}
           </p>
         </div>
       </div>
