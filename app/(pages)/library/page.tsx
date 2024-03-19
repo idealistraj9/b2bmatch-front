@@ -122,12 +122,10 @@ export default function Library() {
       {session.user && <h2 className="text-xl text-center">Willkommen, {session.user.name}!</h2>}
       <div className="pl-14">
         <h2 className="text-xl p-2">
-          Aktivieren oder löschen Sie Ihren gespeicherten Suchanfragen über die
-          Schaltfläche.
         </h2>
         <h2 className="text-xl p-2">
-          Die Suchanfrage wird entweder gelöscht oder auf der Hauptseite eingefügt
-          und dargestellt.
+          Aktivieren oder löschen Sie Ihren gespeicherten Suchanfragen über die
+          Schaltfläche.
         </h2>
       </div>
       <div className="relative w-11/12 h-screen right-2 overflow-scroll max-h-min no-scrollbar pb-60 border-y-2 ">
