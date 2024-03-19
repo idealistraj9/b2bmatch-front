@@ -21,20 +21,18 @@ export default function Login() {
         <div className="flex flex-col mt-10 box-border shadow-primary shadow-xl border-2 w-fit p-10 rounded-xl bg-[#c1d0ac] ">
           <div className="grid w-[500px] grid-cols-2 bg-secondary  rounded-md p-2 outline-none mb-5">
             <button
-              className={`p-3 font-bold rounded-lg focus:outline-none ${
-                activeTab === "account" ? "bg-primary text-secondary" : ""
-              }`}
+              className={`p-3 font-bold rounded-lg focus:outline-none ${activeTab === "account" ? "bg-primary text-secondary" : ""
+                }`}
               onClick={() => setActiveTab("account")}
             >
               Anmelden
             </button>
             <button
-              className={`p-3 font-bold rounded-lg focus:outline-none ${
-                activeTab === "password" ? "bg-primary text-secondary" : ""
-              }`}
+              className={`p-3 font-bold rounded-lg focus:outline-none ${activeTab === "password" ? "bg-primary text-secondary" : ""
+                }`}
               onClick={() => setActiveTab("password")}
             >
-              Melden Sie sich an
+              Registrieren
             </button>
           </div>
           {activeTab === "account" ? (
