@@ -43,16 +43,16 @@ const Sidebar = () => {
               </Link>
             </li>
             <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">
-                  <Link
-                    href="/library"
-                    className="flex items-center  space-x-3 rounded-md"
-                  >
-                    <span>lhre Bibliothek</span>
-                  </Link>
-                </li>
+              <Link
+                href="/library"
+                className="flex items-center  space-x-3 rounded-md"
+              >
+                <span>lhre Bibliothek</span>
+              </Link>
+            </li>
             {session?.user ? (
               <>
-                
+
               </>
             ) : (
               <>

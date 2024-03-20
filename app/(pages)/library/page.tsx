@@ -119,7 +119,7 @@ export default function Library() {
   return (
     <div className="flex flex-col bg-secondary pt-10">
       {session && <h1 className="text-3xl text-center">Gespeicherte Suchanfragen</h1>}
-      {session.user && <h2 className="text-xl text-center">Willkommen, {session.user.name}!</h2>}
+      {session.user && <h2 className="text-xl text-center">Hallo, {session.user.name}!</h2>}
       <div className="pl-14">
         <h2 className="text-xl p-2">
         </h2>
