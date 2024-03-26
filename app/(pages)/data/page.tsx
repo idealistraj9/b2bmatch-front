@@ -6,7 +6,7 @@ async function fetchHtmlContent() {
   const repoName = process.env.repoName;
   const filePath = "data.html"; // Update with the actual path
   const token = process.env.GIT_ACCESS_TOKEN;
-  const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
+  const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}?ref=main`;
 
   try {
     const response = await fetch(apiUrl, { headers: { Authorization: `Bearer ${token}`, } });
