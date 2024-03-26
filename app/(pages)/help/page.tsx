@@ -4,7 +4,7 @@ async function fetchHtmlContent() {
   const repoOwner = process.env.repoOwner;
   const repoName = process.env.repoName;
   const filePath = "help.html";
-  const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}ref=main`;
+  const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}?ref=main`;
   try {
     console.log("api url is this"+apiUrl);
     const response = await fetch(apiUrl, { headers: { Authorization: `Bearer ${token}`, } });
