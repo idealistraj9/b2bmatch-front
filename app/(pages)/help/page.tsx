@@ -7,6 +7,7 @@ async function fetchHtmlContent() {
   const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}?ref=main`;
   try {
     console.log("api url is this"+apiUrl);
+    console.log("api token "+token);
     const response = await fetch(apiUrl, { headers: { Authorization: `Bearer ${token}`, } });
     const data = await response.json();
     const base64Content = data.content;
