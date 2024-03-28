@@ -6,10 +6,10 @@ async function fetchHtmlContent() {
   const filePath = "help.html";
   const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}?ref=main`;
   try {
-    console.log("api url is this"+apiUrl);
-    console.log("api token "+token);
+    console.log("curl -H Authorization: token "token+" "+apiUrl);
     const response = await fetch(apiUrl, { headers: { Authorization: `Bearer ${token}`, } });
     const data = await response.json();
+    console.log(data)
     const base64Content = data.content;
     const htmlContent = new TextDecoder('utf-8').decode(Buffer.from(data.content, 'base64'));
     return htmlContent;
