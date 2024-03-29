@@ -1,0 +1,129 @@
+<head>
+    <meta charset="UTF-8">
+</head>
+<style>
+    /* General Styles */
+    .background-secondary {
+      background-color: transparent;
+    }
+
+    .padding-10 {
+      padding: 0.5rem;
+    }
+
+    .padding-top-3 {
+      padding-top: 0.75rem;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .height-screen {
+      height: 100vh;
+    }
+
+    .overflow-auto {
+      overflow: auto;
+    }
+
+    /* Heading Styles */
+    .heading-container {
+      font-size: 3rem;
+      margin-top: 0.25rem;
+      font-weight: bold;
+      padding-left: 0.5rem;
+    }
+
+    .gradient-heading {
+       background-image: linear-gradient(to right, #00cc00, #005900);
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+    /* Image Card Styles */
+    .image-card {
+      display: flex;
+      width: 50%;
+      margin: 0.75rem;
+      padding: 0.5rem;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      box-shadow: none;
+      background-color: transparent;
+      border: none;
+    }
+
+    .image-card img {
+      border-radius: 50%;
+    }
+
+    /* Text Card Styles */
+    .text-card {
+      display: flex;
+      width: 50%;
+      margin: 0.75rem;
+      padding: 0.5rem;
+      flex-direction: column;
+      text-align: left;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+    }
+
+    .card-title {
+      margin-top: 1.25rem;
+      font-size: 1.25rem;
+    }
+
+    .card-description {
+      font-size: 1.25rem;
+    }
+  </style>
+
+  <div class="background-secondary padding-10 padding-top-3 flex-container text-center justify-center  ">
+    <span class="heading-container">
+      <h1 class="gradient-heading">
+        Über uns
+      </h1>
+    </span>
+    <div class="background-secondary flex-container justify-center items-center margin-3 rounded-sm border-background margin-top-3 padding-top-0">
+      <div class="image-card">
+        <img src="./about.jpg" alt="" />
+        <h1 class="text-2xl font-bold margin-top-5">
+          Wir wollen einen Beitrag leisten, die heutige Suche von Kontaktinformationen zu verbessern. 
+        </h1>
+      </div>
+      <div class="text-card">
+        <h1 class="card-title margin-top-5 font-bold">Urheberschaft</h1>
+        <p class="card-description">
+          Wir leben und arbeiten in Zürich (Schweiz). Wir sind ein Team aus verschiedenen Disziplinen. Neben Informatikern, die sich mit künstlicher Intelligenz und moderner Informationstechnologie auskennen, stammen unsere Kenntnisse aus den Bereichen Unternehmensverkauf, Marketing und Statistik.
+        </p>
+        <h1 class="card-title margin-top-5 font-bold">Unser Ansatz</h1>
+        <p class="card-description">Unser Motto lautet: Weniger ist mehr. Wenn Sie wissen, wer sich wirklich für Sie interessiert, können Sie solche Personen ganz anders ansprechen. Im Gegensatz zu generischen Suchmaschinen oder herkömmlichen Adressanbietern sind wir darauf spezialisiert, hochgradig zielgerichtete Ergebnisse zu liefern, die auf Ihre individuellen Bedürfnisse zugeschnitten sind.</p>
+        <h1 class="card-title margin-top-5 font-bold">
+        Unser Angebot
+        </h1>
+        <p class="card-description">
+        Im öffentlichen und kostenlosen Bereich von B2Bmatch.ch können Sie selbstständig Marktrecherchen durchführen. Die Ergebnisse Ihrer Recherche werden verbal (ausformulierte Statistiken) und visuell (Grafiken mit detaillierten Statistiken) dargestellt. Die Ergebnisse können Sie kostenfrei und kommerziell nutzen, wenn Sie auf uns verweisen. Konkrete Kontakte  können kostenpflichtig bei uns bestellt werden. 
+        </p>
+        <h1 class="card-title margin-top-5 font-bold">
+          Machen Sie mit
+        </h1>
+        <p class="card-description">
+          Wenn Sie sich registrieren, besprechen wir gerne Ihre Ergebnisse. Sie erhalten zwar sofort direkte Hinweise (Tips) auf Ihre Suchanfragen, können die Ergebnisse gleich kontrollieren und selbst verbessern. Aber nichts geht über die Erfahrung derer, die ein solches System entwickelt haben. Registrieren Sie sich - wir freuen uns auf Sie!
+        </p>
+      </div>
+    </div>
+  </div>
